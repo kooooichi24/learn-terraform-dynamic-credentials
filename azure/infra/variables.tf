@@ -1,5 +1,5 @@
 variable "azure_location" {
   type        = string
-  default     = "eastus"
+  default     = "japaneast"
   description = "Azure location for all resources"
 }
