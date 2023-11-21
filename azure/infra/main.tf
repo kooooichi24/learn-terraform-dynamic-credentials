@@ -6,6 +6,8 @@ provider "azurerm" {
   }
 }
 
+provider "azuread" {}
+
 resource "azurerm_resource_group" "example" {
   name     = "exampleTFResourceGroup"
   location = var.azure_location
@@ -25,3 +27,7 @@ resource "azurerm_subnet" "example" {
   address_prefixes     = ["10.0.2.0/24"]
 }
 
+resource "azuread_application" "example" {
+  display_name     = "example application"
+  description      = "example application"
+}
