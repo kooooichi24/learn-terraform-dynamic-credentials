@@ -6,6 +6,7 @@ terraform {
     }
   }
   cloud {
+    organization = "koichi-furukawa"
     workspaces {
       name = "learn-terraform-dynamic-credentials"
     }
